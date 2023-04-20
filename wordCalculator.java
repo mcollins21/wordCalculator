@@ -73,6 +73,7 @@ public class wordCalculator {
             System.out.print("\n" + sum);
         } else {
             System.out.print("\n An Error has Occurred. Please Restart Calculator");
+            exit(1);
         }
 
     }
