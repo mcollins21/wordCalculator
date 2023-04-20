@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
+//import static java.lang.System.exit;
+
 public class wordCalculator {
     public static void main(String[] args) {
 
@@ -32,6 +34,32 @@ public class wordCalculator {
         System.out.println("\nIs this the correct operation? Y/N to continue... ");
         Scanner confirmChoice = new Scanner(System.in);
 
+        String confirmLetter = confirmChoice.nextLine();
+
+        if (confirmLetter.equals("Y")) {                            //confirms with the user the correct operation was selected.
+            System.out.println("Positive Confirmation...");            //edge cases with capitalization were addressed
+        } else if (confirmLetter.equals("y")) {
+            System.out.println("Positive Confirmation...");
+        } else if (confirmLetter.equals("N")) {
+            System.out.println("Negative Confirmation. Please Restart Word Calculator");
+        } else if (confirmLetter.equals("n")) {
+            System.out.println("Negative Confirmation. Please Restart Word Calculator");
+        } else {
+            System.out.print("Invalid Input. Please Restart Word Calculator");
+        }
+
+        Scanner inputNumber = new Scanner(System.in);
+
+        System.out.println("\nPlease type in first number of your calculation");        //first input number
+        double num1 = inputNumber.nextDouble();
+
+        System.out.println("\nPlease type in second number of your calculation");       //second input number
+        double num2 = inputNumber.nextDouble();
+
+        if (selectOpp.equals("Addition")) {             // if user typed addition then run through addition
+            double sum = num1 + num2;
+            System.out.print("\n" + sum);
+        }
 
     }
 }
