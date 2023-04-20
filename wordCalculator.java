@@ -72,7 +72,7 @@ public class wordCalculator {
             double sum = num1 / num2;
             System.out.print("\n" + sum);
         } else {
-            System.out.print("\n An Error has Occurred. Please Restart Calculator");
+            System.out.print("\nAn Error has Occurred. Please Restart Calculator");
             exit(1);
         }
 
