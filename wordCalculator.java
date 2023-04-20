@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-//import static java.lang.System.exit;
+import static java.lang.System.exit;
 
 public class wordCalculator {
     public static void main(String[] args) {
@@ -42,10 +42,13 @@ public class wordCalculator {
             System.out.println("Positive Confirmation...");
         } else if (confirmLetter.equals("N")) {
             System.out.println("Negative Confirmation. Please Restart Word Calculator");
+            exit(1);
         } else if (confirmLetter.equals("n")) {
             System.out.println("Negative Confirmation. Please Restart Word Calculator");
+            exit(1);
         } else {
             System.out.print("Invalid Input. Please Restart Word Calculator");
+            exit(1);
         }
 
         Scanner inputNumber = new Scanner(System.in);
@@ -59,7 +62,19 @@ public class wordCalculator {
         if (selectOpp.equals("Addition")) {             // if user typed addition then run through addition
             double sum = num1 + num2;
             System.out.print("\n" + sum);
+        } else if (selectOpp.equals("Subtraction")) {
+            double sum = num1 - num2;
+            System.out.print("\n" + sum);
+        } else if (selectOpp.equals("Multiplication")) {
+            double sum = num1 * num2;
+            System.out.print("\n" + sum);
+        } else if (selectOpp.equals("Division")) {
+            double sum = num1 / num2;
+            System.out.print("\n" + sum);
+        } else {
+            System.out.print("\n An Error has Occurred. Please Restart Calculator");
         }
 
     }
 }
+

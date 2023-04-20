@@ -1,5 +1,6 @@
 ## wordCalculator
 
-A functioning calculator that prompts the user to select their operation and then numerical values. This is able to perform simple operations such as addition, subtraction, multiplication, and division.
+A functioning calculator that prompts the user to select their operation and then numerical values. This is able to perform simple two numbers operations such as addition, subtraction, multiplication, and division.
 
-<strong> Goal: "Demonstrates the importance of how code design must be simplistic and not redundant in nature. </Strong>
+<strong> Goal: "Demonstrates simple pattern design and makes users more conscious of the choices they must make to create simple calculations." </Strong>
+
